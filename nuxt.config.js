@@ -1,3 +1,13 @@
 import theme from '@nuxt/content-theme-docs'
 
-export default theme({})
+export default theme({
+  i18n: {
+    locales: () => [{
+      code: 'ja',
+      iso: 'ja-JP',
+      file: 'ja_JP.js',
+      name: '日本語',
+    }],
+    defaultLocale: 'ja'
+  },
+})
